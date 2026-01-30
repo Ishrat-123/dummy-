@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Products</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav>
+    <h2>Dummy Shop Admin</h2>
+    <a href="dashboard.html" data-testid="nav-home">Home</a>
+    <a href="products.html" data-testid="nav-products">Products</a>
+    <button id="logoutBtn" data-testid="logout-button">Logout</button>
+  </nav>
+
+  <div class="content">
+    <h3 data-testid="product-page-title">Product Management</h3>
+
+    <div class="form">
+      <input id="productName" data-testid="product-name-input" type="text" placeholder="Product Name" />
+      <input id="productPrice" data-testid="product-price-input" type="number" placeholder="Price" />
+      <button id="addProductBtn" data-testid="add-product-button">Add Product</button>
+      <p id="formError" data-testid="product-error" class="error"></p>
+    </div>
+
+    <table id="productTable" data-testid="product-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody data-testid="product-table-body"></tbody>
+    </table>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
